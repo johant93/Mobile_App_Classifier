@@ -1,0 +1,47 @@
+TODO list
+===========
+
+containers:
+
+  PacketContainer:
+    + update according to Session / Flow
+
+utils:
+  + A module which reads an hcl config file from each recording directory
+    + Read desired packet fields from hcl files
+    + Read desired features list from hcl files
+
+  + gen_label(hcl file)
+
+  gen_pcap_filenames:
+    Catch - No filenames in a given directory
+  gen_data_folders:
+    Add check if a .pcap file exists
+
+  read_pcap:
+    Add the following columns to the packets table:
+      + tcp.flags.syn
+      + tcp.flags.ack
+      + tcp.flags.reset
+      + tcp.flags.fin
+      + tcp.flags.cwr (Congestion Window Reduced)
+
+
+core:
+  Converter:
+    + Write to file - DONE
+      + Write without converting to pd.DataFrame
+    + Exceptions
+    + Make Initialization a separate process
+    + Use multiprocessing - pickle -  Can't pickle <type 'instancemethod'>: attribute lookup __builtin__.instancemethod failed
+    + Periodically print out elapsed time and converted sample count
+    + OSX label
+
+main:
+  + function which runs all the relevant functions, input root folder name + output file name OUTPUT samples.csv
+
+ALL:
+  + Check for extreme cases:
+  + Globals for: os, browser, aplication, service
+  + Cleanup code
+  + create feature_list according to session methods

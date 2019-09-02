@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ConsentText</key>
+	<dict>
+		<key>default</key>
+		<string>OPT APN flash</string>
+	</dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>APNs</key>
+			<array>
+				<dict>
+					<key>AuthenticationType</key>
+					<string>CHAP</string>
+					<key>Name</key>
+					<string>flashnetworks.co.il</string>
+					<key>Password</key>
+					<string>flash</string>
+					<key>Username</key>
+					<string>arielu1</string>
+				</dict>
+			</array>
+			<key>PayloadDescription</key>
+			<string>Configures a custom APN.</string>
+			<key>PayloadDisplayName</key>
+			<string>Cellular</string>
+			<key>PayloadIdentifier</key>
+			<string>com.apple.cellular.4049CDC1-77F0-4EDC-96A8-07AC96768901</string>
+			<key>PayloadType</key>
+			<string>com.apple.cellular</string>
+			<key>PayloadUUID</key>
+			<string>4049CDC1-77F0-4EDC-96A8-07AC96768901</string>
+			<key>PayloadVersion</key>
+			<real>1</real>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>OPT APN flash</string>
+	<key>PayloadDisplayName</key>
+	<string>FlashNetworks_APN_flash</string>
+	<key>PayloadIdentifier</key>
+	<string>flashnetworks.com</string>
+	<key>PayloadOrganization</key>
+	<string>FlashNetworks</string>
+	<key>PayloadRemovalDisallowed</key>
+	<false/>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>E4CE7B80-E0EE-485D-80F1-B7CD76997D60</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>

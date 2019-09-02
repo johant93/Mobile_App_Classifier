@@ -1,0 +1,3 @@
+nose		Testing
+pandas 	Statistical functions on pcap DataFrames
+numpy

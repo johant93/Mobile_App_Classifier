@@ -1,0 +1,194 @@
+### 0.10 ###
+core:
+  main:
+    work():
+    Converts all relevant pcap files in the given ROOT_DIRECTORY with the given feature_list and save the results to the output_filename
+
+    start_here():
+    UI - For end users who dont want to write code
+
+
+### 0.09 ###
+core:
+  Converter:
+    __init__():
+      Added a Pool class field
+
+    sessions_to_samples():
+      Added if clause to check if a given folder has at least one pcap file
+
+    write_to_csv():
+      Added this function.
+      Writes the processed feature mat to a csv file.
+
+tests:
+  test_utils_general:
+    test_is_pcap_session_True():
+      Added this test
+
+    test_is_pcap_session_False():
+      Added this test
+
+utils:
+  general:
+    gen_data_folders():
+      Currently assuming that if a single pcap file in a directory is a session
+      pcap, all other pcap files in the directory are also session pcaps.
+      Therefor the if clause checks if any of the pcap files in a given
+      directory is a session pcap. If true the directory is added to the list
+      of relevant directories.
+
+    gen_pcap_filenames():
+      Added check - whether filename ends with .pcap extension.
+
+    is_pcap_session():
+      Return True if the given pcap is a session
+
+    space_to_underscore():
+      Replace space with underscore for all folder and file names - for the input filename
+
+
+### 0.08 ###
+core:
+  Converter:
+    sessions_to_samples():
+      Naively generates label by parsing the folder name and sends it to pcap_to_feature_vector().
+
+data/L_cyber_chrome_09-17__11_38_11:
+  label_data.hcl:
+    Follows the following format:
+    label_data {
+    	os = "Linux"
+    	browser = "Chrome"
+    	application = "Twitter"
+    	service = "Tweet"
+    }
+
+tests:
+  Adjusted tcp.len to frame.len
+
+utils:
+  general:
+    gen_label():
+      returns a label for a given os.
+      Should eventually return a label for any os, browser, application, service combination.
+
+    parse_folder_name():
+      Assumes the following format:
+      L_cyber_chrome_09-17__11_38_11
+      Currently returns os by the first letter in the folder name.
+
+  hcl_helpers:
+    read_hcl():
+      Returns a JSON representing the content of the hcl file.
+
+    read_label_data():
+      Assumes label_data follows a specific format.
+      Returns os, browser, application, service.
+
+
+### 0.07 ###
+containers:
+  Flow:
+    Added the following features:
+      """ Std of packet time deltas """
+      """ Size of all packets in bytes """
+      """ Min packet size """
+      """ Max packet size """
+      """ Std packet size """
+      """ Mean packet size """
+      """ Min time delta """
+      """ Max time delta """
+      """ time delta mean """
+
+  Session:
+    Added the following features:
+      """ Size of all packets in bytes """
+      """ Max packet size """
+      """ Min packet size """
+      """ # Packets in forward direction (fpackets) """
+      """ # Packets in backward direction (bpackets) """
+      """ # Bytes in forward direction (fbytes) """
+      """ # Bytes in backward direction (bbytes) """
+      """ Min forward inter-arrival time (min_fiat) """
+      """ Min backward inter-arrival time (min_biat) """
+      """ Max forward inter-arrival time (max_fiat) """
+      """ Max backward inter-arrival time (max_biat) """
+      """ Standard deviation of forward inter- arrival times (std_fiat) """
+      """ Standard deviation of backward inter- arrival times (std_biat) """
+      """ Mean forward inter-arrival time (mean_fiat) """
+      """ Mean backward inter-arrival time (mean_biat) """
+      """ Min forward packet length (min_fpkt) """
+      """ Min backward packet length (min_bpkt) """
+      """ Max forward packet length (max_fpkt) """
+      """ Max backward packet length (max_bpkt) """
+      """ Std deviation of forward packet length (std_fpkt) """
+      """ Std deviation of backward packet length (std_bpkt) """
+      """ Mean forward packet length (mean_fpkt)	"""
+      """ Mean backward packet length (mean_bpkt) """
+
+
+### 0.06 ###
+containers.Session:
+  from_filename() class method now uses read_pcap instread of gen_flows_up_down.
+  Effectively using a custom function to read data from tshark output into a DataFrame instead of steelscript-wireshark.
+
+tests:
+  test_session1:
+    Did some adjustments to the test suite to fit the new Session class structure.
+
+  test_session2:
+    A new test which reads in an entire pcap file.
+    Currently checks that the amout of read packets fits the actual amount of packets in the pcap file.
+
+utils.read_pcap:
+  Implemented read_pcap() which simply calls tshark in the background and sends its output to pandas.read_table.
+  Apparently simpler and more reliable than steelscript-wireshark.
+
+
+### 0.05 ###
+utils.read_pcap:
+  gen_flows_up_down():
+    Now returns up_flow, down_flow (in this order) according to tcp.dstport 443
+
+
+### 0.04 ###
+utils.general:
+  + cleanup_pyc():
+    .pyc file cleanup function (root/cleanup_pyc_files.py calls it).
+
+  + gen_data_folders():
+    walks the root data folder and returns all relevant folder names containing pcap files.
+
+  + gen_pcap_filenames():
+    from a given folder
+
+README.md:
+  + data folder structure explanation
+
+core:
+  Converter.py:
+    Merged sessions_to_samples() and pcap_to_feature_vector into converter
+    pcap_to_feature_vector() now reads the feature_methods list from a class field
+
+changelog.txt:
+  Renamed changes.txt to changelog.txt
+
+
+### 0.03 ###
+Added a TODO list
+
+sessions_to_samples:
+  Added this module to map a folder of pcap files to a list of sample feature vectors
+
+
+### 0.02 ###
+pcap_to_feature_vector.py:
+  pcap_to_feature_vector:
+      Dynamically call methods
+
+containers:
+  Session:
+    from_filename:
+        returning only session DataFrame - matching the constructor
+    Added packet_count()
