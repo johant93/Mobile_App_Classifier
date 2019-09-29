@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98290d26-6608-4f78-92b2-03d06d4def0d" name="Default Changelist" comment="" />
+    <list default="true" id="98290d26-6608-4f78-92b2-03d06d4def0d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/containers/Statistics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ML_app_classifier/.ipynb_checkpoints/ML_RForest-KNN-DTree-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../ML_app_classifier/.ipynb_checkpoints/ML_RForest-KNN-DTree-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ML_app_classifier/App_classifier_comparison.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../ML_app_classifier/App_classifier_comparison.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ML_app_classifier/ML_Decision_Tree.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../ML_app_classifier/ML_Decision_Tree.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ML_app_classifier/ML_RForest-KNN-DTree.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../ML_app_classifier/ML_RForest-KNN-DTree.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/containers/Session.py" beforeDir="false" afterPath="$PROJECT_DIR$/containers/Session.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/Converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/Converter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/general.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/general.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,21 +27,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="349">
+              <caret line="29" column="91" lean-forward="true" selection-start-line="29" selection-start-column="91" selection-end-line="29" selection-end-column="91" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/utils/general.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="99" column="37" selection-start-line="99" selection-start-column="37" selection-end-line="99" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -39,7 +39,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/containers/Packet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-333">
+            <state relative-caret-position="15">
               <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
             </state>
           </provider>
@@ -48,8 +48,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/containers/Flow.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1080">
-              <caret line="72" column="24" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="24" />
+            <state relative-caret-position="870">
+              <caret line="59" column="27" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
               <folding>
                 <element signature="e#32#86#0" expanded="true" />
               </folding>
@@ -60,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/read_pcap.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1478">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="1229">
+              <caret line="114" selection-start-line="114" selection-end-line="114" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -70,18 +70,43 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site.py">
+        <entry file="file://$PROJECT_DIR$/utils/general.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2520">
-              <caret line="171" column="45" selection-start-line="171" selection-start-column="34" selection-end-line="171" selection-end-column="45" />
+            <state relative-caret-position="11">
+              <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/statistics.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="649" selection-start-line="649" selection-end-line="649" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/containers/Session.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+              <folding>
+                <element signature="e#32#42#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/Converter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1153">
+            <state relative-caret-position="267">
+              <caret line="50" column="60" lean-forward="true" selection-start-line="50" selection-start-column="60" selection-end-line="50" selection-end-column="60" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -90,10 +115,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/containers/Session.py">
+        <entry file="file://$PROJECT_DIR$/containers/Statistics.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-950">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="248">
+              <caret line="41" column="53" selection-start-line="41" selection-start-column="53" selection-end-line="41" selection-end-column="53" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/scipy/stats/stats.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="356">
+              <caret line="1160" column="59" selection-start-line="1160" selection-start-column="56" selection-end-line="1160" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -109,9 +146,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>path</find>
-      <find>os.walk</find>
-      <find>fields</find>
       <find>table</find>
       <find>data_folders</find>
       <find>sessions_to_samples</find>
@@ -139,6 +173,9 @@
       <find>getattr</find>
       <find>feature_list</find>
       <find>feature_methods</find>
+      <find>join</find>
+      <find>-1</find>
+      <find>var</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -154,16 +191,18 @@
         <option value="$PROJECT_DIR$/containers/Flow.py" />
         <option value="$PROJECT_DIR$/core/main2.py" />
         <option value="$PROJECT_DIR$/containers/Packet.py" />
-        <option value="$PROJECT_DIR$/core/main.py" />
-        <option value="$PROJECT_DIR$/containers/Session.py" />
         <option value="$PROJECT_DIR$/utils/read_pcap.py" />
-        <option value="$PROJECT_DIR$/core/Converter.py" />
         <option value="$PROJECT_DIR$/utils/general.py" />
+        <option value="$PROJECT_DIR$/containers/statistics.py" />
+        <option value="$PROJECT_DIR$/containers/Session.py" />
+        <option value="$PROJECT_DIR$/containers/Statistics.py" />
+        <option value="$PROJECT_DIR$/core/main.py" />
+        <option value="$PROJECT_DIR$/core/Converter.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="56" />
+    <option name="x" value="12" />
     <option name="y" value="58" />
     <option name="width" value="1400" />
     <option name="height" value="767" />
@@ -174,13 +213,27 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="pcap-feature-extractor-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="pcap-feature-extractor-master" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pcap-feature-extractor-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pcap-feature-extractor-master" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pcap-feature-extractor-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pcap-feature-extractor-master" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="pcap-feature-extractor-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="pcap-feature-extractor-master" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="pcap-feature-extractor-master" type="b2602c69:ProjectViewProjectNode" />
@@ -195,6 +248,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -336,15 +390,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="56" y="58" width="1400" height="767" extended-state="0" />
+    <frame x="12" y="58" width="1400" height="767" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13633068" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24945612" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32994923" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.52592593" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49963742" weight="0.60888886" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.20296296" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49963742" weight="0.3525926" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3288889" />
@@ -357,19 +411,19 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13633068" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13633068" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24945612" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32994923" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3911111" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4562963" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.20296296" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49963742" visible="true" weight="0.45037037" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3288889" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3288889" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.20148148" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.2162963" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.20296296" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5003626" side_tool="true" weight="0.40296295" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3288889" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -383,6 +437,16 @@
           <url>file://$PROJECT_DIR$/steelscript/steelscript-workspace/pcap_info.py</url>
           <line>13</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/core/Converter.py</url>
+          <line>52</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/containers/Statistics.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -491,24 +555,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4650">
-          <caret line="310" selection-start-line="310" selection-end-line="310" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/core/internals/blocks.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
           <caret line="127" selection-start-line="127" selection-end-line="127" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/core/frame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="438" selection-start-line="438" selection-end-line="438" />
         </state>
       </provider>
     </entry>
@@ -533,47 +583,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/containers/Packet.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-333">
-          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/core/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/steelscript/wireshark/core/pcap.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="20" column="62" lean-forward="true" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
-          <folding>
-            <element signature="e#238#247#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/containers/Flow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="72" column="24" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="24" />
-          <folding>
-            <element signature="e#32#86#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/steelscript/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -581,52 +595,131 @@
     <entry file="file://$PROJECT_DIR$/steelscript/wireshark/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2019.1/python_stubs/-1199943127/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="144" column="7" lean-forward="true" selection-start-line="144" selection-start-column="7" selection-end-line="144" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2520">
+        <state relative-caret-position="458">
           <caret line="171" column="45" selection-start-line="171" selection-start-column="34" selection-end-line="171" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/read_pcap.py">
+    <entry file="file://$PROJECT_DIR$/steelscript/wireshark/core/pcap.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1478">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="172">
+          <caret line="51" column="8" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#238#247#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="308" selection-start-line="308" selection-end-line="308" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/containers/Packet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/containers/Flow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="59" column="27" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
+          <folding>
+            <element signature="e#32#86#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2019.1/python_stubs/-1199943127/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="5106" column="8" selection-start-line="5106" selection-start-column="8" selection-end-line="5106" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/pandas/core/frame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="438" selection-start-line="438" selection-end-line="438" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/containers/Session.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-950">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="15">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#32#42#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/Converter.py">
+    <entry file="file://$PROJECT_DIR$/utils/read_pcap.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1153">
+        <state relative-caret-position="1229">
+          <caret line="114" selection-start-line="114" selection-end-line="114" />
           <folding>
-            <element signature="e#0#38#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/general.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="99" column="37" selection-start-line="99" selection-start-column="37" selection-end-line="99" selection-end-column="37" />
+        <state relative-caret-position="11">
+          <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/statistics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="649" selection-start-line="649" selection-end-line="649" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/scipy/stats/stats.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="1160" column="59" selection-start-line="1160" selection-start-column="56" selection-end-line="1160" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/containers/Statistics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="41" column="53" selection-start-line="41" selection-start-column="53" selection-end-line="41" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="29" column="91" lean-forward="true" selection-start-line="29" selection-start-column="91" selection-end-line="29" selection-end-column="91" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/Converter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="50" column="60" lean-forward="true" selection-start-line="50" selection-start-column="60" selection-end-line="50" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>

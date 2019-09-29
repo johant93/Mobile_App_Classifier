@@ -1,24 +1,33 @@
 from core.Converter import Converter
 from utils.general import space_to_underscore
-
+import numpy as np
 """
 Convert all relevant pcap files in the given ROOT_DIRECTORY with the given feature_list and save the results to the output_filename
 """
+
+new_features_list = []
+
+def build_newfeaturelist():
+    for i in range(0,60):
+        new_features_list.append('stat_'+str(i))
+
 def work(
     ROOT_DIRECTORY,
     output_filename='samples.csv',
     rename_space_underscore=False,
     feature_list=['packet_count', 'mean_packet_size', 'sizevar', 'std_fiat', 'std_biat', 'fpackets', 'bpackets', 'fbytes', 'bbytes', 'min_fiat', 'min_biat', 'max_fiat', 'max_biat', 'std_fiat', 'std_biat', 'mean_fiat', 'mean_biat', 'min_fpkt', 'min_bpkt', 'max_fpkt', 'max_bpkt', 'std_fpkt', 'std_bpkt', 'mean_fpkt', 'mean_bpkt']
+
     ):
 
     if rename_space_underscore:
         space_to_underscore(ROOT_DIRECTORY)
 
-    features = feature_list
-    conv = Converter(ROOT_DIRECTORY, feature_list)
+
+    build_newfeaturelist()
+    new_features_list.append('label')
+    conv = Converter(ROOT_DIRECTORY, new_features_list)
     conv.activate()
-    feature_list.append('label')
-    conv.write_to_csv(ROOT_DIRECTORY + '/' + output_filename, separator='\t', column_names=feature_list)
+    conv.write_to_csv(ROOT_DIRECTORY + '/' + output_filename, separator='\t', column_names=new_features_list)
 
 
 """

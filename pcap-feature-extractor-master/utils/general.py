@@ -122,7 +122,7 @@ Labels per combination:
     5 = (OSX, Safari)
 
 """
-def gen_label(os, browser, application, service):
+def gen_label(device, browser, application, service):
     """
     if os == 'Linux':
         if browser == 'Chrome':
@@ -140,12 +140,10 @@ def gen_label(os, browser, application, service):
         if browser == 'Safari':
             return 5
     """
-    if os == 'facebook':
+    if device == 'iphone7':
         return 0
-    elif os == 'amazon':
+    elif device == 'OnePlus':
         return 1
-    elif os == 'cnn':
-        return 2
 
 
 """
@@ -164,6 +162,10 @@ def parse_folder_name(folder_name):
         return 'amazon'
     elif tokens[0] == 'cnn':
         return 'cnn'
+    elif tokens[0] == 'iphone7':
+        return 'iphone7'
+    elif tokens[0] == 'OnePlus':
+        return 'OnePlus'
 
 """ Return True if the given pcap is a session """
 def is_pcap_session(pcap_path):

@@ -24,10 +24,16 @@ class Session(PacketContainer):
 
     """ Whats the difference between this function and the ctor? """
     @classmethod
-    def from_filename(cls, path_str, fields=['frame.time_epoch', 'frame.time_delta', 'frame.len', 'frame.cap_len', 'frame.marked', 'ip.src', 'ip.dst', 'ip.len', 'ip.flags', 'ip.flags.rb', 'ip.flags.df', 'ip.flags.mf', 'ip.frag_offset', 'ip.ttl', 'ip.proto', 'tcp.srcport', 'tcp.dstport', 'tcp.len', 'tcp.nxtseq', 'tcp.hdr_len', 'tcp.flags.cwr', 'tcp.flags.urg', 'tcp.flags.push', 'tcp.flags.syn' ,'tcp.window_size','tcp.checksum']):
-        # sess = gen_data_frame(path_str)
+    def from_filename(cls, path_str, fields=['frame.time_epoch', 'frame.time_delta', 'frame.len', 'frame.cap_len', 'frame.marked', 'ip.src', 'ip.dst',
+                                             'ip.len', 'ip.flags', 'ip.flags.rb', 'ip.flags.df', 'ip.flags.mf', 'ip.frag_offset', 'ip.ttl', 'ip.proto',
+                                             'tcp.srcport', 'tcp.dstport', 'tcp.len', 'tcp.nxtseq', 'tcp.hdr_len', 'tcp.flags.cwr', 'tcp.flags.urg', 'tcp.flags.push',
+                                             'tcp.flags.syn','tcp.flags.ack','tcp.flags.reset', 'tcp.window_size']):
+        # sess = gen_data_frame(path_str) ,
         sess = read_pcap(path_str,fields=fields)
         return cls(sess)
+
+    def get_sess(self):
+        return self.sess
 
     """ Length in seconds """
     def duration(self):
@@ -148,3 +154,4 @@ class Session(PacketContainer):
     """ Mean backward packet length (mean_bpkt) """
     def mean_bpkt(self):
         return self.flow_down.mean_packet_size()
+

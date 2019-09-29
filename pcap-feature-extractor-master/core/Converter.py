@@ -1,6 +1,7 @@
 from containers.Session import Session
 from utils.general import gen_pcap_filenames, gen_data_folders, parse_folder_name, gen_label,gener_label,remove_UnknowSSL
 from utils.hcl_helpers import read_label_data
+from containers.Statistics import Statistics
 from functools import partial
 from multiprocessing import Pool
 import numpy as np
@@ -34,27 +35,34 @@ class Converter(object):
 	def pcap_to_feature_vector(self, pcap_path):
 		# print 'Processing: ' + repr(str(pcap_path))
 		sess = Session.from_filename(pcap_path)
+		stats = Statistics()
 		feature_vector = np.array([])
 		label = gener_label(pcap_path)
-		for method_name in self.feature_methods:
-			method = getattr(sess, method_name)
-			if not method:
-			    raise Exception("Method %s not implemented" % method_name)
-			feature_vector = np.append(feature_vector, method())
+		print(pcap_path)
+
+		# for method_name in self.feature_methods:
+		# 	method = getattr(sess, method_name)
+		# 	if not method:
+		# 	    raise Exception("Method %s not implemented" % method_name)
+		# 	feature_vector = np.append(feature_vector, method())
+
+		get_stats = getattr(stats,'get_all_statistics')
+		all_stats = get_stats(sess.get_sess())
+		feature_vector = np.append(feature_vector,all_stats)
 		feature_vector = np.append(feature_vector, label)
 		return feature_vector
 
 
 	""" Return a list of sample feature vectors for a given child data directory """
 	def sessions_to_samples(self, CHILD_DIRECTORY):
-		print ('In: ' + repr(str(CHILD_DIRECTORY)))
+		print ('In: '+ repr(str(CHILD_DIRECTORY)))
 		only_pcap_files = gen_pcap_filenames(CHILD_DIRECTORY)
 		if len(only_pcap_files) > 0:
 			""" IMPLEMENT """
 			# label_data_file = get_label_data_hcl_file()
 			# label = gen_label(label_data_file)
-			# os = parse_folder_name(CHILD_DIRECTORY)
-			# label = gen_label(os,'','','')
+			os = parse_folder_name(CHILD_DIRECTORY)
+			#label = gen_label(os,'','','')
 			func = partial(self.pcap_to_feature_vector)
 			samples = list(map(func, only_pcap_files))
 			return samples

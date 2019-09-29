@@ -1,0 +1,87 @@
+
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%------------------------------------------------------------------------------
+\documentclass[twoside]{article}
+\usepackage{blindtext}
+\usepackage[sc]{mathpazo} % Use the Palatino font
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\linespread{1.05} % Line spacing - Palatino needs more space between lines
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+
+\usepackage[english]{babel} % Language hyphenation and typographical rules
+
+\usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry} % Document margins
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{booktabs} % Horizontal rules in tables
+
+\usepackage{lettrine} % The latrine is the first enlarged letter at the beginning of the text
+
+\usepackage{enumitem} % Customized lists
+
+\usepackage{titlesec} % Allows customization of titles
+\renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
+\renewcommand\thesubsection{\roman{subsection}} % roman numerals for subsections
+\titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{} % Change the look of the section titles
+\titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{} % Change the look of the section titles
+
+\usepackage{fancyhdr} % Headers and footers
+\pagestyle{fancy} % All pages have headers and footers
+\fancyhead{} % Blank out the default header
+\fancyfoot{} % Blank out the default footer
+\fancyfoot[RO,LE]{\thepage} % Custom footer text
+
+\usepackage{titling} % Customizing the title section
+
+\usepackage{hyperref} % For hyperlink in the PDF
+
+%---------------------------------------------------------------------------------
+%	TITLE SECTION
+%---------------------------------------------------------------------------------
+
+\setlength{\droptitle}{-4\baselineskip} % Move the title up
+
+\pretitle{\begin{center}\Huge\bfseries} % Article title formatting
+\posttitle{\end{center}} % Article title closing formatting
+\title{Classifier System for Application-Level Mobile Traffic} % Article title
+\author{%
+\textsc{Yair Ivgi} % first author's name
+\normalsize 308275601  % id
+\and
+\textsc{Johann Thuillier} % Second author's name
+\normalsize 336104120 % Second author's institution
+\and
+\\ \textsc{Advisor: Dr. Amit Dvir}\\   % Advisor name
+\normalsize  Ariel University  % institution
+}
+
+\date{}
+\begin{document}
+% Print the title
+\maketitle
+%-------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%-------------------------------------------------------------------------------
+\subtitle{\huge Done:}
+
+\large \begin{itemize}
+    \item Capture traffic from android and iOS device.
+    \item Split all traffic to sessions
+    \item Analyse traffic data of 3 specific application : Facebook, amazon, CNN
+    \item Extract features
+    \item Build data sets compatible to Machine learning 
+    \item Test different classifiers (knn, random forest, decision-tree) on different data sets
+    \item Improve accuracy / results
+\end{itemize}
+
+\vspace{1.5\baselineskip}
+
+\subtitle{\huge To do:}
+\begin{itemize}
+    \item Get more data from Oneplus device.
+    \item Balance data sets (quantity of each label need to be near)
+    \item Improve accuracy / results
+    \item Final Report
+
+
+\end{itemize}
+\end{document}
